@@ -1,0 +1,66 @@
+body {
+    font-family: Barlow;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+    margin: 2rem;
+}
+
+header,
+footer {
+    background-color: midnightblue;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 0;
+}
+
+h1,
+h2, 
+h3,
+p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    max-width: 19rem;
+}
+
+section {
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: lightgray;
+    max-width: 21rem;
+}
+
+img {
+    margin: 0 auto;
+    max-width: 20rem;
+}
+
+footer a {
+    color: white;
+}
+
+.footerp{
+    max-width: 100%;
+}
+
+#lastUpdated {
+    color: yellow;
+    font-size: .8rem;
+}
+
+p {
+    max-width: 19rem;
+}
