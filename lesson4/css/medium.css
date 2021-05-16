@@ -1,0 +1,43 @@
+@media only screen and (min-width: 32.5em) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navigation a {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .site-name {
+    margin-left: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .motto {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    width: 85px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
