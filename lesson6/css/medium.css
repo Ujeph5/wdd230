@@ -1,0 +1,86 @@
+@media only screen and (min-width: 32.5em) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navigation a {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .site-name {
+    margin-left: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .motto {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    width: 85px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .absolute p {
+    font-size: 1rem;
+  }
+  
+  .absolute h3 {
+    font-size: 1.25rem;
+  }
+
+  .absolute {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .map {
+    display: block;
+    float: left;
+    width: 180px;
+    margin: 1rem;
+    border: 3px solid #2f3061;
+    border-radius: 5px;
+  }
+
+  .five-day-forecast {
+    font-size: 1rem;
+  }
+  
+  .forecast-head {
+    font-size: 1rem;
+  }
+
+  #img-container {
+    float: right;
+    margin-top: 1rem;
+    max-width: 300px;
+    margin-left: .5rem;
+  }
+}

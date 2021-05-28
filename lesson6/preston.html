@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Joseph Alexander" />
+    <meta
+      name="description"
+      content="Weather, sports, restaurants and more for Preston, Idaho."
+    />
+    <title>Southeast Idaho Weather | Preston</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/windChill.js"></script>
+  </head>
+  <body>
+    <aside class="banner">
+      <p>
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+        park pavilion.
+      </p>
+    </aside>
+    <header>
+      <img src="images/seidaho-weather-logo.png" alt="site logo" class="logo" />
+      <div class="site-name">
+        <h1>Southeast Idaho Weather</h1>
+        <div class="motto"><em>All you need at your fingertips!</em></div>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="menu" href="#">Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="storm-center.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Preston</h2>
+      <section class="weather-summary">
+        <picture>
+          <source
+            media="(max-width: 420px)"
+            srcset="images/lesson6-img-small.jpg"
+          />
+          <source
+            media="(max-width: 600px)"
+            srcset="images/lesson6-img-medium.jpg"
+          />
+          <img src="images/lesson6-img-large.jpg" alt="sunny sky" />
+        </picture>
+        <aside class="absolute">
+          <h3>Weather Summary</h3>
+          <p>Currently: <span>Sunny</span></p>
+          <p>Current Temp: <span id="temp">42</span><span>&deg;F</span></p>
+          <p>Wind Chill: <span id="wind-chill"></span><span>&deg;F</span></p>
+          <p>Humidity: <span>70&percnt;</span></p>
+          <p>Wind Speed: <span id="wind-speed">7</span><span> mph</span></p>
+        </aside>
+      </section>
+      <section id="forecast-head">
+        <h3>5 Day Forecast</h3>
+        <div class="five-day-forecast">
+          <div class="forecast-col">
+            <span class="forecast-head">Monday</span
+            ><img src="images/sunny.png" alt="sunny" class="forecast-img" />
+            <spn>72&deg;F</spn>
+          </div>
+          <div class="forecast-col">
+            <span class="forecast-head">Tuesday</span
+            ><img src="images/sunny.png" alt="sunny" class="forecast-img" />
+            <spn>68&deg;F</spn>
+          </div>
+          <div class="forecast-col">
+            <span class="forecast-head">Wednesday</span
+            ><img src="images/sunny.png" alt="sunny" class="forecast-img" />
+            <spn>72&deg;F</spn>
+          </div>
+          <div class="forecast-col">
+            <span class="forecast-head">Thursday</span
+            ><img src="images/sunny.png" alt="sunny" class="forecast-img" />
+            <spn>74&deg;F</spn>
+          </div>
+          <div class="forecast-col">
+            <span class="forecast-head">Friday</span
+            ><img src="images/sunny.png" alt="sunny" class="forecast-img" />
+            <spn>75&deg;F</spn>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="img-container">
+          <img src="images/pancakes.jpg" alt="pancakes" class="article-img" />
+        </div>
+        <h3>Founders Day Fresco</h3>
+        <p class="article-author"><em>by Jackson Browning</em></p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+          laboriosam ut voluptate officia nisi, ab cumque in velit enim ea at
+          aut quisquam molestias quasi debitis recusandae tempore accusamus
+          eaque! Sint expedita explicabo architecto unde rem velit alias?
+          Blanditiis beatae excepturi, culpa itaque vitae cum quam! Esse,
+          suscipit dolorem delectus fugit natus voluptas omnis optio laboriosam
+          totam placeat quidem pariatur in, exercitationem sit blanditiis!
+          Debitis natus vel quia beatae modi ex sit, doloremque obcaecati
+          reiciendis sequi amet ipsa vero eaque necessitatibus esse, fugiat
+          itaque. Ipsa at perspiciatis nobis iure? Explicabo distinctio nostrum
+          officia animi vitae atque maxime odit praesentium veritatis minus
+          eveniet, commodi tempora saepe porro ipsam eius earum aut ab? Esse,
+          tenetur. Quo eum dolores, tempora est culpa quibusdam inventore ipsa,
+          voluptatem ducimus expedita veniam atque voluptate, et laborum maxime
+          ipsam magnam labore laudantium modi nulla? Sint assumenda quisquam in
+          commodi. Voluptatem corporis nisi nam hic? Quibusdam at maxime
+          accusantium in hic accusamus ad debitis. Non reiciendis sed ea itaque
+          aperiam qui, excepturi doloribus sunt ipsa ducimus, quibusdam
+          voluptate et dolorem harum quidem natus ullam labore aliquid,
+          voluptatibus ipsam repudiandae. Beatae sint reiciendis aliquid officia
+          adipisci praesentium? Soluta laudantium earum tenetur totam deserunt
+          facilis odit aut vel exercitationem dolorum?
+        </p>
+      </section>
+      <section class="contact">
+        <img
+          class="map"
+          src="images/preston-map.jpg"
+          alt="Southeast Idaho Weather location"
+        />
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>📍 140 N 2nd W<br />Preston, ID 83263</p>
+          <p>☎ 555-555-5555<br />📧 seidahoweather@gmail.com</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Southeast Idaho Weather | Attributions |
+        Joseph Alexander
+      </p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Barlow", "Bitter"],
+        },
+      });
+    </script>
+  </body>
+</html>
