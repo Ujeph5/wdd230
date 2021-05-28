@@ -26,11 +26,11 @@ const currentDay = currentDate.getDay();
 let five = forecast();
 
 function forecast() {
-  day1 = daysOfWeek[currentDay];
-  day2 = daysOfWeek[currentDay + 1];
-  day3 = daysOfWeek[currentDay + 2];
-  day4 = daysOfWeek[currentDay + 3];
-  day5 = daysOfWeek[currentDay + 4];
+  day1 = daysOfWeek[currentDay + 1];
+  day2 = daysOfWeek[currentDay + 2];
+  day3 = daysOfWeek[currentDay + 3];
+  day4 = daysOfWeek[currentDay + 4];
+  day5 = daysOfWeek[currentDay + 5];
 
   document.querySelector("#day1").textContent = day1;
   document.querySelector("#day2").textContent = day2;
