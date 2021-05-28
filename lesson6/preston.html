@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/windChill.js"></script>
+    <script defer src="js/forecast.js"></script>
   </head>
   <body>
     <aside class="banner">
@@ -59,7 +60,7 @@
           <h3>Weather Summary</h3>
           <p>Currently: <span>Sunny</span></p>
           <p>Current Temp: <span id="temp">42</span><span>&deg;F</span></p>
-          <p>Wind Chill: <span id="wind-chill"></span><span>&deg;F</span></p>
+          <p>Wind Chill: <span id="wind-chill"></span></p>
           <p>Humidity: <span>70&percnt;</span></p>
           <p>Wind Speed: <span id="wind-speed">7</span><span> mph</span></p>
         </aside>
@@ -68,27 +69,27 @@
         <h3>5 Day Forecast</h3>
         <div class="five-day-forecast">
           <div class="forecast-col">
-            <span class="forecast-head">Monday</span
+            <span class="forecast-head" id="day1">Monday</span
             ><img src="images/sunny.png" alt="sunny" class="forecast-img" />
             <spn>72&deg;F</spn>
           </div>
           <div class="forecast-col">
-            <span class="forecast-head">Tuesday</span
+            <span class="forecast-head" id="day2">Tuesday</span
             ><img src="images/sunny.png" alt="sunny" class="forecast-img" />
             <spn>68&deg;F</spn>
           </div>
           <div class="forecast-col">
-            <span class="forecast-head">Wednesday</span
+            <span class="forecast-head" id="day3">Wednesday</span
             ><img src="images/sunny.png" alt="sunny" class="forecast-img" />
             <spn>72&deg;F</spn>
           </div>
           <div class="forecast-col">
-            <span class="forecast-head">Thursday</span
+            <span class="forecast-head" id="day4">Thursday</span
             ><img src="images/sunny.png" alt="sunny" class="forecast-img" />
             <spn>74&deg;F</spn>
           </div>
           <div class="forecast-col">
-            <span class="forecast-head">Friday</span
+            <span class="forecast-head" id="day5">Friday</span
             ><img src="images/sunny.png" alt="sunny" class="forecast-img" />
             <spn>75&deg;F</spn>
           </div>
