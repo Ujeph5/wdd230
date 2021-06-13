@@ -1,0 +1,45 @@
+@media only screen and (min-width: 45em) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .motto {
+    font-size: 1.5rem;
+  }
+
+  .navigation a {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  .absolute p {
+    font-size: 1.25rem;
+  }
+  
+  .absolute h3 {
+    font-size: 1.6rem;
+  }
+
+  .contact {
+    justify-items: center;
+  }
+
+  .map {
+    width: 300px;
+  }
+
+  #img-container {
+    max-width: 400px
+  }
+
+  #gallery-grid {
+    grid-template-columns: 3fr;
+  }
+
+  figure img:hover {
+    box-shadow: 0 0 0 #888;
+  }
+}
