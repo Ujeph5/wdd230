@@ -5,17 +5,17 @@ document.querySelector("#year").innerHTML = d.getFullYear();
 const menuButton = document.querySelector(".menu");
 const mainnav = document.querySelector(".navigation");
 
-menuButton.addEventListener("click", () => {mainnav.classList.toggle("responsive"); }, false);
+menuButton.addEventListener(
+  "click",
+  () => {
+    mainnav.classList.toggle("responsive");
+  },
+  false
+);
 
 window.onresize = () => {
   if (window.innerWidth > 760) mainnav.classList.remove("responsive");
 };
-
-// create banner for fridays only
-let day = d.getDay();
-if (day != 5) {
-  document.querySelector(".banner").style.display = "none";
-}
 
 // get number of days since last visit and display to screen
 function getNumberOfDays() {
@@ -35,4 +35,10 @@ function getNumberOfDays() {
 function saveDate() {
   let lastDate = new Date();
   localStorage.lastDate = lastDate;
+}
+
+// create banner for fridays only
+let day = d.getDay();
+if (day != 5) {
+  document.querySelector(".banner").style.display = "none";
 }
