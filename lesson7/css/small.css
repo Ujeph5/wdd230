@@ -193,3 +193,15 @@ img {
   grid-template-columns: 1fr;
   gap: 1rem;
 }
+
+figure {
+  margin: 0 auto;
+  width: 240px;
+  height: auto;
+  border: 1px solid #2f3061;
+  box-shadow: 0 0 10px #888;;
+}
+
+figure img {
+  width: 100%;
+}
