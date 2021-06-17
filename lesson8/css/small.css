@@ -1,0 +1,207 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2f3061;
+  color: #44ffd2;
+}
+
+.logo {
+  width: 80px;
+  margin: 1rem 0;
+}
+
+.site-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.motto {
+  margin: 0 auto;
+  color: white;
+  font-size: 14px;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: #fcd581;
+  margin-top: -16px;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: #2f3061;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.navigation a:hover {
+  color: white;
+  background-color: #2f3061;
+}
+
+.responsive li {
+  display: block;
+}
+
+main {
+  margin: 1rem auto;
+  max-width: 760px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Barlow, sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+body {
+  color: #2f3061;
+  font-family: Bitter, serif;
+}
+
+footer {
+  background-color: #2f3061;
+  color: #fcd581;
+  text-align: center;
+  padding: 1rem;
+}
+
+section {
+  border: 5px solid #2f3061;
+  margin: 1rem;
+  padding: 0.4rem;
+  background-color: hsla(41, 95%, 75%, 0.4);
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.banner {
+  background-color: #44ffd2;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.weather-summary {
+  position: relative;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.absolute {
+  position: absolute;
+  border: 3px solid #2f3061;
+  top: 1rem;
+  left: 1rem;
+  background-color: #44ffd2;
+  opacity: .8;
+  padding: .5rem;
+}
+
+.absolute p {
+  font-size: .7rem;
+}
+
+.absolute h3 {
+  font-size: 1rem;
+}
+
+aside p span {
+  font-weight: 700;
+}
+
+.article-author {
+  font-size: .8rem;
+}
+
+.contact-info {
+  margin: 0 auto;
+  width: 15rem;
+}
+
+.map {
+  display: none;
+}
+
+.five-day-forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  text-align: center;
+  font-size: .8rem;
+}
+
+.forecast-col {
+  display: grid;
+  grid-template-rows: 2rem 1fr 1.5rem;
+  border-bottom: 1px solid #2f3061;
+  border-left: 1px solid #2f3061;
+  border-right: 1px solid #2f3061;
+}
+
+.forecast-head {
+  background-color: #2f3061;
+  color: white;
+  font-size: .8rem;
+  padding: .5rem;
+}
+
+#forecast-head {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.article-img {
+  box-shadow: -3px 5px 10px #888;
+}
+
+#gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  margin: 0 auto;
+  width: 240px;
+  height: auto;
+  border: 1px solid #2f3061;
+  box-shadow: 0 0 10px #888;;
+}
+
+figure img {
+  width: 100%;
+}
