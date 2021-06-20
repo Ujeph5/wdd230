@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Joseph Alexander" />
+    <meta
+      name="description"
+      content="Pictures of weather and events in southeast Idaho."
+    />
+    <title>Southeast Idaho Weather | Gallery</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Bitter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/getDays.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/seidaho-weather-logo.png" alt="site logo" class="logo" />
+      <div class="site-name">
+        <h1>Southeast Idaho Weather</h1>
+        <div class="motto"><em>All you need at your fingertips!</em></div>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="menu" href="#">Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="storm-center.html">Storm Center</a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main id="gallery-grid">
+      <figure>
+        <img src="images/lightning.jpg" alt="" loading="lazy">
+        <figcaption>Something</figcaption>
+      </figure>
+      <figure>
+        <img src="images/sunny-day.jpg" alt="" loading="lazy">
+        <figcaption>Something</figcaption>
+      </figure>
+      <figure>
+        <img src="images/snowy-forest.jpg" alt="" loading="lazy">
+        <figcaption>Something</figcaption>
+      </figure>
+      <figure>
+        <img src="images/sunny-day2.jpg" alt="" loading="lazy">
+        <figcaption>Something</figcaption>
+      </figure>
+      <figure>
+        <img src="images/rain-cloud.jpg" alt="" loading="lazy">
+        <figcaption>Something</figcaption>
+      </figure>
+      <figure>
+        <img src="images/orange-clouds.jpg" alt="" loading="lazy">
+        <figcaption>Something</figcaption>
+      </figure>
+      <figure>
+        <img src="images/rainbow.jpg" alt="" loading="lazy">
+        <figcaption>Something</figcaption>
+      </figure>
+      <figure>
+        <img src="images/snowy-mountains.jpg" alt="" loading="lazy">
+        <figcaption>Something</figcaption>
+      </figure>
+      <figure>
+        <img src="images/fog.jpg" alt="" loading="lazy">
+        <figcaption>Something</figcaption>
+      </figure>
+    </main>
+    <footer>
+      <p>Days since last visit: <span id="daysSinceLastVisit"></span></p>
+      <p>
+        &copy; <span id="year"></span> Southeast Idaho Weather | Attributions
+        | Joseph Alexander
+      </p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

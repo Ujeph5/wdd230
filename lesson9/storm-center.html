@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Joseph Alexander" />
+    <meta
+      name="description"
+      content="Find out about upcoming storms for Southeast Idaho."
+    />
+    <title>Southeast Idaho Weather | Storm Center</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Bitter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/seidaho-weather-logo.png" alt="site logo" class="logo" />
+      <div class="site-name">
+        <h1>Southeast Idaho Weather</h1>
+        <div class="motto"><em>All you need at your fingertips!</em></div>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="menu" href="#">Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li class="active"><a href="storm-center.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Storm Center</h2>
+      <section id="form">
+        <form action="thanks.html" method="get">
+          <label for="fullname"
+            >Full Name
+            <input
+              type="text"
+              name="fullname"
+              pattern="[A-Za-z]+"
+              required
+              placeholder="John Doe"
+              autofocus
+            />
+          </label>
+          <br />
+          <label for="email"
+            >Email
+            <input type="email" name="email" placeholder="email@live.com" />
+          </label>
+          <br />
+          <label for="phone"
+            >Phone Number
+            <input type="tel" name="phone" id="phone" size="10" required />
+          </label>
+          <br />
+          <label for="zip"
+            >Zip Code
+            <input
+              type="number"
+              name="zip"
+              id="zip"
+              placeholder="12345"
+              required
+            />
+          </label>
+          <br />
+          <label for="stormDate"
+            >Storm Date
+            <input type="date" name="stormDate" id="stormDate" />
+          </label>
+          <br />
+          <label for="stormType"
+            >Storm Type
+            <input type="text" name="stormType" id="stormType" list="storm" />
+            <datalist id="storm">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist>
+          </label>
+          <br />
+          <label for="severity"
+            >Storm Severity
+            <br>
+            <input
+              type="range"
+              name="severity"
+              id="severity"
+              list="stormSeverity"
+              min="1"
+              max="10"
+              step="1"
+              value="5"
+            />
+            <datalist id="stormSeverity">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7"></option>
+              <option value="8"></option>
+              <option value="9"></option>
+              <option value="10"></option>
+            </datalist>
+          </label>
+          <br />
+          <label for="region"
+            >Storm Region
+            <select name="region" id="region">
+              <option value="Select Region..." disabled>
+                Select Region...
+              </option>
+              <option value="Preston">Preston</option>
+              <option value="Soda Springs">Soda Springs</option>
+              <option value="Fish Haven">Fish Haven</option>
+            </select>
+          </label>
+          <br />
+          <div class="radio">
+            <p>User In-Danger Level</p>
+            <br />
+            <input type="radio" name="dangerLevel" id="yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" name="dangerLevel" id="maybe" />
+            <label for="maybe">Maybe</label>
+            <input type="radio" name="dangerLevel" id="no" />
+            <label for="no">No</label>
+          </div>
+          <br />
+          <label for="comments"
+            >Additional Comments
+            <br>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Southeast Idaho Weather | Attributions |
+        Joseph Alexander
+      </p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
